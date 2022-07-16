@@ -5,9 +5,76 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.icone{
+  width: 22px;
+  height: 22px;
+
+}
+.logo {
+  display: flex;
+  width: 146px;
+  align-items: center;
+  justify-content: space-between;
+}
+.separador {
+  width: 1px;
+  height: 22px;
+  background-color: #DBDBDB;
+  margin: 0 10px;
+}
+.container {
+  width: 100%;
+  max-width: 935px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  
+}
+.navbar {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  height: 54px;
+  border-bottom: 1px solid #DBDBDB;
+  font-size: 22px;
+  background-color: #FFF;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+.insta {
+  display: flex;
+  max-width: 103;
+  max-height: 29;
+}
+.pesquisa{
+  display: flex;
+  width: 215px;
+  align-items: center;
+  
+}
+.pesquisa input {
+  width: 215px;
+  height: 28px;
+  border-radius: 3px;
+  background-color: #FAFAFA;
+  border: 1px solid #DBDBDB;
+  color: #979797;
+  text-align: center;
+}
+.icones{
+  align-items: center;
+  display: flex;
+  width: 128px;
+  justify-content: space-between;
 }
