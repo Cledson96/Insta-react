@@ -4,9 +4,7 @@
 
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: 'Roboto', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
@@ -15,8 +13,9 @@ body {
 
 .App {
   display: flex;
-  width: 935px;
+  max-width: 935px;
   margin: 0 auto;
+
 }
 
 code {
@@ -27,6 +26,8 @@ code {
 .icone {
   width: 22px;
   height: 22px;
+  font-size: 22px;
+  color: black;
 
 }
 
@@ -55,7 +56,7 @@ code {
 }
 
 .navbar {
-  width: 100%;
+  width: 100vw;
   display: flex;
   justify-content: center;
   height: 54px;
@@ -70,8 +71,8 @@ code {
 
 .insta {
   display: flex;
-  max-width: 103;
-  max-height: 29;
+  max-width: 103px;
+  max-height: 29px;
 }
 
 .pesquisa {
@@ -121,7 +122,11 @@ code {
   margin-right: 10px;
 
 }
-h3 ,h1, h2, span{
+
+h3,
+h1,
+h2,
+span {
   cursor: pointer;
 }
 
@@ -138,7 +143,7 @@ h3 ,h1, h2, span{
   display: flex;
   flex-direction: column;
   height: 1500px;
-  width: 614px;
+  max-width: 614px;
   margin-top: 84px;
   margin-left: auto;
   margin-right: auto;
@@ -217,6 +222,14 @@ h3 ,h1, h2, span{
   font-weight: 300;
 }
 
+.curtir {
+  display: flex;
+  max-width: 24px;
+  max-height: 24px;
+  font-size: 24px;
+  margin-left: 10px;
+}
+
 .post .fundo .curtidas img {
   width: 20px;
   height: 20px;
@@ -235,13 +248,12 @@ h3 ,h1, h2, span{
 }
 
 .img_publicada {
-  width: 612px;
-  height: 612px;
+  width: 100%;
+
 }
 
 .img_publicada img {
   width: 100%;
-  height: 100%;
 }
 
 .fundo {
@@ -254,6 +266,8 @@ h3 ,h1, h2, span{
 }
 
 .acoes {
+  display: flex;
+  flex-direction: row;
   width: 100%;
   height: 54px;
   display: flex;
@@ -263,9 +277,14 @@ h3 ,h1, h2, span{
 }
 
 .acoes img {
-  width: 24px;
-  height: 24px;
-  margin-left: 15px;
+  width: 20px;
+  height: 20px;
+  margin-left: 10px;
+}
+
+.iconss {
+  display: flex;
+  align-items: center;
 }
 
 .sidebar {
@@ -318,7 +337,7 @@ h3 ,h1, h2, span{
   justify-content: space-between;
   font-weight: bold;
   margin-bottom: 15px;
- color: #262626;
+  color: #262626;
 }
 
 .sugestao {
@@ -357,15 +376,60 @@ h3 ,h1, h2, span{
   color: #8E8E8E;
   font-weight: 400;
 }
+
 .links {
   font-size: 11px;
   color: #C7C7C7;
   margin-top: 40px;
   cursor: pointer;
 }
+
 .desativa {
   display: none;
 }
+
 .ativa {
-  display: initial;
+  display: flex;
+}
+
+.mediaa {
+  display: none;
+}
+
+@media (max-width: 935px) {
+  .sidebar {
+    display: none;
+  }
+
+  .conteudo {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 614px) {
+  .media {
+    display: none;
+  }
+
+  input {
+    display: none;
+  }
+
+  .mediaa {
+    display: flex;
+  }
+
+  .logo {
+    padding-left: 20px;
+  }
+
+  .pesquisa {
+
+    justify-content: center;
+  }
+
+  .icones {
+    justify-content: flex-end;
+    padding-right: 20px;
+  }
 }

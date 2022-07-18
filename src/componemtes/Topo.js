@@ -1,29 +1,26 @@
-
 import logo from "./img/logo.png";
-import logo_insta from "./img/logo_insta.png";
-import direct from "./img/direct.png";
-import bussula from "./img/bussula.ico";
-import heart from "./img/heart.png";
-import person from "./img/person.webp";
+
 function Topo() {
     return (
         <div class="navbar">
             <div class="container">
                 <div class="logo">
-                    <img class="icone" src={logo_insta} />
-                    <div class="separador"></div>
-                    <img class="insta" src={logo} />
+                    <ion-icon class="icone" name="logo-instagram"></ion-icon>
+                    <div class="separador media"></div>
+                    <img class="insta media" src={logo} />
                 </div>
 
                 <div class="pesquisa">
                     <input type="text" placeholder="Pesquisar" />
+                    <img class="insta mediaa" src={logo} />
                 </div>
 
                 <div class="icones">
-                    <img class="icone" src={direct} />
-                    <img class="icone" src={bussula} />
-                    <img class="icone" src={heart} />
-                    <img class="icone" src={person} />
+                    <ion-icon class="icone" name="paper-plane-outline"></ion-icon>
+                    <ion-icon class="icone media" name="compass-outline"></ion-icon>
+                    <ion-icon class="icone media" name="heart-outline"></ion-icon>
+                    <ion-icon class="icone media" name="person-outline"></ion-icon>
+
                 </div>
 
             </div>
