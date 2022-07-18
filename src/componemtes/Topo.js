@@ -1,7 +1,4 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
+
 import logo from "./img/logo.png";
 import logo_insta from "./img/logo_insta.png";
 import direct from "./img/direct.png";
